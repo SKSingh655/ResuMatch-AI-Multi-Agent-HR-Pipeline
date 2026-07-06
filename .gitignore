@@ -1,7 +1,5 @@
 # Secrets & Configs
-secrets/
 .env
-.secrets/
 .venv/
 
 # Python caching
