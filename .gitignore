@@ -1,0 +1,15 @@
+# Secrets & Configs
+secrets/
+.env
+.secrets/
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Local data / outputs
+data/evaluation_report.md

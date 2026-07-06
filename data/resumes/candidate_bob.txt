@@ -1,0 +1,30 @@
+BOB JONES
+Email: bob.jones@email.com | Phone: +1 555 0199 | GitHub: github.com/bobjones | Portfolio: bobjones.dev
+
+PROFESSIONAL SUMMARY
+Creative and detail-oriented Frontend Developer with 4 years of experience building responsive, interactive, and visually stunning web applications. Proficient in React, JavaScript, HTML5, CSS3, and modern CSS frameworks. Eager to transition into full-stack development, with basic knowledge of Python and Flask for side projects.
+
+TECHNICAL SKILLS
+- Frontend: JavaScript (ES6+), React.js, Next.js, Redux, HTML5, CSS3, Tailwind CSS, Sass
+- Backend (Basic/Hobby): Python, Flask, Node.js, Express
+- Databases: SQLite, Firebase
+- Tools: Git, npm, Webpack, Vite, Figma
+
+WORK EXPERIENCE
+
+Frontend Engineer | PixelPerfect Web Agency, Remote
+August 2022 – Present
+- Developed and maintained responsive web applications using React.js and Tailwind CSS for various clients.
+- Collaborated with UX/UI designers to translate Figma mockups into pixel-perfect frontend code.
+- Improved frontend performance, scoring 95+ on Google Lighthouse page speed metrics.
+- Built a simple internal dashboard app using React on the frontend and Flask with SQLite on the backend as a learning project.
+
+Junior Frontend Developer | CodeCraft Studio, New York
+August 2020 – July 2022
+- Created landing pages and static websites using HTML, CSS, JavaScript, and Jekyll.
+- Maintained legacy jQuery-based websites and migrated components to modern JavaScript.
+- Assisted backend team in integrating REST APIs with React frontends.
+
+EDUCATION
+B.S. in Web Design & Interactive Media | State University
+Graduated: May 2020

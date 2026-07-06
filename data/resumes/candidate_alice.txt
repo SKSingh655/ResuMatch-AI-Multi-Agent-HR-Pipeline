@@ -1,0 +1,33 @@
+ALICE SMITH
+Email: alice.smith@email.com | Phone: +91 98765 43210 | GitHub: github.com/alicesmith | LinkedIn: linkedin.com/in/alicesmith
+
+PROFESSIONAL SUMMARY
+Senior Backend Engineer with 6 years of experience designing and developing highly scalable, reliable, and performant web applications. Expertise in Python, FastAPI, Django, PostgreSQL, Docker, and AWS. Proven track record of optimizing database queries, building microservices, and leading backend engineering teams.
+
+TECHNICAL SKILLS
+- Languages: Python, SQL, Bash
+- Frameworks & Libraries: FastAPI, Django, Flask, PyTest, Celery
+- Databases: PostgreSQL, MongoDB, Redis, Elasticsearch
+- Cloud & DevOps: AWS (EC2, S3, RDS, ECS), Docker, Kubernetes, GitHub Actions
+- Tools & Methodologies: Git, Agile/Scrum, Microservices, CI/CD, OpenAPI/Swagger
+
+WORK EXPERIENCE
+
+Senior Backend Engineer | TechCorp Solutions, Bengaluru
+June 2023 – Present
+- Designed and built high-performance microservices using FastAPI, reducing API response times by 35%.
+- Migrated legacy Django monolith to containerized microservices architecture on AWS ECS using Docker.
+- Optimized PostgreSQL database queries, indexing strategies, and connection pooling, reducing database CPU utilization by 40%.
+- Integrated Redis caching layers to speed up frequently requested endpoints.
+- Mentored 4 junior engineers and established testing best practices with PyTest, increasing code coverage to 90%.
+
+Backend Developer | AppDynamics, Noida
+July 2020 – May 2023
+- Built RESTful APIs using Django and PostgreSQL to support mobile and web frontends.
+- Set up automated CI/CD pipelines using GitHub Actions, reducing deployment time by 50%.
+- Integrated RabbitMQ for asynchronous tasks and background email notifications.
+- Managed GCP cloud resources including Compute Engine, Cloud Storage, and Cloud SQL.
+
+EDUCATION
+B.Tech in Computer Science & Engineering | National Institute of Technology
+Graduated: May 2020

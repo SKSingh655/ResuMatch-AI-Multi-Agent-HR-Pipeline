@@ -1,0 +1,15 @@
+Job Title: Senior Backend Engineer (Python)
+Location: Remote / Bengaluru
+Experience: 5+ years
+
+About the Role:
+We are looking for a Senior Backend Engineer to join our core engineering team. You will be responsible for designing, building, and maintaining scalable backend services and APIs that power our platforms. You will work closely with frontend engineers, product managers, and data scientists to deliver high-quality, performant, and reliable software.
+
+Requirements:
+- 5+ years of experience in backend software engineering.
+- Strong proficiency in Python and web frameworks like FastAPI, Django, or Flask.
+- Deep understanding of database systems (SQL and NoSQL), query optimization, and schema design.
+- Hands-on experience with cloud platforms (AWS, GCP, or Azure) and containerization (Docker, Kubernetes).
+- Familiarity with microservices architecture, message queues (RabbitMQ, Kafka), and caching layers (Redis).
+- Passion for writing clean, testable, and well-documented code.
+- Experience with building and deploying LLM-based applications is a big plus.
