@@ -34,8 +34,11 @@ graph TD
 │   ├── job_descriptions/
 │   │   └── backend_engineer.txt       # Target Job Description
 │   └── resumes/
+│       ├── SKSResume.pdf              # Target PDF candidate resume
 │       ├── candidate_alice.txt        # Mock Candidate (Strong Match)
 │       └── candidate_bob.txt          # Mock Candidate (Weak Match)
+├── secrets/
+│   └── gemini_key.txt                 # Local Gemini API Key (Git-ignored)
 ├── .gitignore                         # Configured to exclude environments and outputs
 ├── README.md                          # Project documentation
 └── resumatch_ai.ipynb                 # Core Jupyter Notebook
@@ -47,8 +50,13 @@ graph TD
 
 To run the pipeline, the notebook requires a Gemini API Key. You can provide it in one of the following ways:
 
-### Method 1: Manual Interactive Prompt (Simplest)
-If you run the notebook in VS Code or Jupyter without any environment setup, the Setup cell will securely prompt you with an interactive text input to paste your key when you execute it.
+### Method 1: Local Secrets Folder (Highly Recommended for local runs)
+Create a directory named `secrets` at the root of the project and create a file named `gemini_key.txt` inside it. Paste your API key in this file:
+```bash
+mkdir secrets
+echo "YOUR_GEMINI_API_KEY" > secrets/gemini_key.txt
+```
+*Note: The `secrets/` folder is pre-configured in `.gitignore` and will never be committed to your repository.*
 
 ### Method 2: Set as an Environment Variable
 Alternatively, set the key in your terminal context before starting the notebook server:
@@ -63,7 +71,10 @@ set GEMINI_API_KEY=your_key_here
 export GEMINI_API_KEY="your_key_here"
 ```
 
-### Method 3: Kaggle Secrets (For Kaggle Cloud Runs)
+### Method 3: Manual Interactive Prompt
+If the notebook does not detect the environment variable or local secrets file, it will securely prompt you with an interactive text input to paste your key when you execute the cell.
+
+### Method 4: Kaggle Secrets (For Kaggle Cloud Runs)
 If running on Kaggle:
 1. Go to **Add-ons -> Secrets** in the editor.
 2. Add a new secret with the label `GEMINI_API_KEY` and your key as the value.
