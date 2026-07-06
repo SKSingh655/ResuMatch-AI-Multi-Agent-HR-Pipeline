@@ -36,35 +36,22 @@ graph TD
 │   └── resumes/
 │       ├── candidate_alice.txt        # Mock Candidate (Strong Match)
 │       └── candidate_bob.txt          # Mock Candidate (Weak Match)
-├── secrets/
-│   └── gemini_key.txt                 # Local Gemini API Key (Git-ignored)
-├── .gitignore                         # Configured to prevent key leaks
+├── .gitignore                         # Configured to exclude environments and outputs
 ├── README.md                          # Project documentation
 └── resumatch_ai.ipynb                 # Core Jupyter Notebook
 ```
 
 ---
 
-## 🛠️ Installation & Setup
+## 🛠️ API Key Configuration
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/SKSingh655/ResuMatch-AI-Multi-Agent-HR-Pipeline.git
-cd ResuMatch-AI-Multi-Agent-HR-Pipeline
-```
+To run the pipeline, the notebook requires a Gemini API Key. You can provide it in one of the following ways:
 
-### 2. Set Up Your API Key (Choose One)
+### Method 1: Manual Interactive Prompt (Simplest)
+If you run the notebook in VS Code or Jupyter without any environment setup, the Setup cell will securely prompt you with an interactive text input to paste your key when you execute it.
 
-#### Local Setup (Recommended)
-Create a file named `gemini_key.txt` inside the `secrets/` directory and paste your API key there:
-```bash
-mkdir secrets
-echo "YOUR_GEMINI_API_KEY" > secrets/gemini_key.txt
-```
-*Note: The `secrets/` folder is pre-configured in `.gitignore` and will never be committed to your repository.*
-
-#### Environment Variable Setup
-Alternatively, set the key in your terminal context:
+### Method 2: Set as an Environment Variable
+Alternatively, set the key in your terminal context before starting the notebook server:
 ```bash
 # Windows PowerShell
 $env:GEMINI_API_KEY="your_key_here"
@@ -76,21 +63,20 @@ set GEMINI_API_KEY=your_key_here
 export GEMINI_API_KEY="your_key_here"
 ```
 
+### Method 3: Kaggle Secrets (For Kaggle Cloud Runs)
+If running on Kaggle:
+1. Go to **Add-ons -> Secrets** in the editor.
+2. Add a new secret with the label `GEMINI_API_KEY` and your key as the value.
+3. The notebook will automatically authenticate securely using this secret.
+
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Local
 
-### Local Run
-1. Open the folder in VS Code or Jupyter Notebooks.
-2. Open `resumatch_ai.ipynb`.
-3. Run all cells. 
-4. The notebook will install required dependencies (`google-adk`, `pypdf`, `pandas`, `ipywidgets`) automatically, extract text, call the agents, and show the dashboard.
-
-### Kaggle Run
-1. Create a new notebook on Kaggle.
-2. Go to **File -> Upload Notebook** and upload `resumatch_ai.ipynb`.
-3. In the Kaggle sidebar under **Add-ons -> Secrets**, add a secret with the label `GEMINI_API_KEY` and your key as the value.
-4. Run the notebook. It will detect the Kaggle environment and securely load your API key without exposing it.
+1. Clone this repository and open the workspace.
+2. Open `resumatch_ai.ipynb` in VS Code or Jupyter Lab.
+3. Make sure the notebook kernel is set to your virtual environment (e.g. `Python 3 (ResuMatch AI)`).
+4. Run the cells sequentially.
 
 ---
 
